@@ -1,11 +1,13 @@
 <template>
   <div>
-    <button @click="enableCustomLayout">Update layout</button>
+    <NuxtLayout name="default">
+      <template #header>ヘッダー</template>
+      <h1>Main Page</h1>
+    </NuxtLayout>
   </div>
 </template>
 <script setup>
-const route = useRoute();
-const enableCustomLayout = () => {
-  route.meta.layout = 'custom';
-};
+definePageMeta({
+  layout: true,
+});
 </script>
