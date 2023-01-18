@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <a href="/">Home2</a>
-    <a href="/about">About2</a>
+    <NuxtLink href="/">Home2</NuxtLink>
+    <NuxtLink href="/about">About2</NuxtLink>
   </nav>
 </template>

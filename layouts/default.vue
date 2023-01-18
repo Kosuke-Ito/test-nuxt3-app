@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavNavbar />
+    <Navbar />
     <slot />
   </div>
 </template>
