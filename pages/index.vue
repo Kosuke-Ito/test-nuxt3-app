@@ -1,13 +1,14 @@
 <template>
   <div>
-    <NuxtLayout name="default">
-      <template #header>ヘッダー</template>
-      <h1>Main Page</h1>
-    </NuxtLayout>
+    <h1>Main Page</h1>
+    <button @click="handleClick">Coupon Get</button>
+    <LazyCoupon v-if="show" />
   </div>
 </template>
 <script setup>
-definePageMeta({
-  layout: true,
-});
+const show = ref(false);
+
+const handleClick = () => {
+  show.value = true;
+};
 </script>
