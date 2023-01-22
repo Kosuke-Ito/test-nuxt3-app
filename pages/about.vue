@@ -5,9 +5,9 @@
 </template>
 <script setup>
 function enableCustomLayout() {
-  setPageLayout('custom');
+  setPageLayout('default');
 }
 definePageMeta({
-  layout: false,
+  layout: true,
 });
 </script>
