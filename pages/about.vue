@@ -8,6 +8,6 @@ function enableCustomLayout() {
   setPageLayout('default');
 }
 definePageMeta({
-  layout: true,
+  middleware: 'auth',
 });
 </script>
