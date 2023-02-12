@@ -4,11 +4,14 @@
   </div>
 </template>
 <script setup>
+const title = ref('Aboutページ');
+const description = ref('Aboutページ');
+
 useHead({
-  title: 'Aboutページ',
+  title,
   meta: [
     {
-      name: 'description',
+      name: description,
       content: 'Aboutページ',
     },
   ],
