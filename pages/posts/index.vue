@@ -1,7 +1,8 @@
 <script setup>
-const { data: posts } = await useFetch(
+const { data: posts, error } = await useFetch(
   'https://jsonplaceholder.typicode.com/posts/'
 );
+console.log(('error', error.value));
 </script>
 
 <template>
