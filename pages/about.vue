@@ -7,12 +7,10 @@
     <h1>About Page</h1>
     <h2>Counter</h2>
     <p>Count: {{ counter }}</p>
-    <div>
-      <button @click="counter++">+</button>
-      <button @click="enableCustomLayout">Update layout</button>
-    </div>
+    <div><button @click="counter++">+</button></div>
   </div>
 </template>
+
 <script setup>
 const title = ref('Aboutページ');
 const description = ref('Aboutページ');
@@ -28,9 +26,6 @@ useHead({
   ],
 });
 
-function enableCustomLayout() {
-  setPageLayout('default');
-}
 definePageMeta({
   middleware: 'auth',
 });
