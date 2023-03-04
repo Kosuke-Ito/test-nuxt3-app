@@ -1,3 +1,11 @@
 <template>
-  <h1>User Listページ</h1>
+  <div>
+    <h1>Usersページ</h1>
+    <p>Count:{{ counter }}</p>
+    <NuxtPage />
+  </div>
 </template>
+
+<script setup>
+const counter = useState('counter');
+</script>
