@@ -9,5 +9,5 @@
 </template>
 
 <style scoped>
-a{margin-right: 1rem;}
+a {margin-right: 1rem;}
 </style>
