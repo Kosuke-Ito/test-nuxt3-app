@@ -1,9 +1,7 @@
 <template>
   <NuxtLayout>
-    <p>{{ error }}</p>
-    <button @click="clearError({ redirect: '/' })">Clear Error</button>
-    
-    <button @click="clearError">Clear Error2</button>
+    <p>{{ error }}</p>    
+    <button @click="clearError">Clear Error</button>
   </NuxtLayout>
 </template>
 
