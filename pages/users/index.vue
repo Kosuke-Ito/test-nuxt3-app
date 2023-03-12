@@ -4,3 +4,9 @@
     <NuxtPage />
   </div>
 </template>
+
+<script setup>
+const resetError = (error) => {
+  error.value = null;
+};
+</script>

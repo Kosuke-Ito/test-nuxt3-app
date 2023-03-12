@@ -10,7 +10,11 @@
 <script setup>
 const counter = ref(0);
 const inc = () => {
-  throw createError('エラー発生');
-  counter.value++;
+  throw createError({
+    statusCode: '400',
+    statusMessage: 'Bad Request',
+    message: 'エラー発生',
+    fatal: true,
+  });
 };
 </script>
